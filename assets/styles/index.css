@@ -1,0 +1,132 @@
+@import "reset.css";
+@import "normalize.css";
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,400italic);
+
+body{
+  background: #FBFBFB;
+  color: #121212;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+header.header{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  height: 4rem;
+  font-size: 1rem;
+}
+div.menu{
+  display: flex;
+}
+div.hero{
+  background: url('../images/hero.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+}
+div.hero-content{
+  padding-left: 1rem;
+  color: #FBFBFB;
+}
+a.nostyle-link{
+  color: #121212;
+  text-decoration: none;
+  padding: 0 1rem;
+}
+.searchbar{
+  display: flex;
+  align-items: center;
+  background: #555555;
+  justify-content: space-around;
+}
+div.cars{
+  margin: 1rem;
+}
+div.card{
+  margin: 1rem;
+  box-shadow: 0 .2rem .2rem .2rem rgba(0, 0, 0, 0.5);
+}
+img.car-img{
+  width: 100%;
+}
+h3.car-brand{
+  font-size: 1rem;
+    color: #575757;
+}
+h3.car-brand, h4.car-shortDesc{
+  margin: .5rem 0;
+}
+
+.card-content{
+  padding: 1rem;
+}
+div.car-price{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.discountprice, .currentprice{
+  padding-right: 1rem;
+}
+button.btn1 {
+    outline: none;
+    border: none;
+    padding: .5rem;
+    margin: .5rem 0;
+    color: #fbfbfb;
+    background: #ea0000;
+    letter-spacing: 1px;
+}
+span.yo{
+  font-size: 2rem;
+  font-weight: 900;
+  color: #ea0000;
+}
+span.com{
+  font-weight: 900;
+}
+div.discountprice{
+  font-size: 1.5rem;
+  color: #ff2b2b;
+  font-weight: 900;
+}
+h1.title1{
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+input[type="text"]{
+  outline: none;
+    color: #000000;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: .5rem 0 .5rem 0;
+    border-radius: 10px;
+    border: none;
+    margin: .5rem;
+}
+input[type="button"]{
+  outline: none;
+    border: none;
+    padding: .5rem;
+    border-radius: 10px;
+    background: #00bbbb;
+    color: #fbfbfb;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 480px) {
+  div.menu{
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  div.col-flex{
+    display: flex;
+  }
+  div.card{
+    width: 33.33%;
+  }
+}

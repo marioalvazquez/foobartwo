@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html ng-app="mainApp" ng-controller="FirstController">
+  <head>
+    <meta charset="utf-8">
+    <title>Hello Salis!</title>
+    <script src="../assets/js/angular.min.js" charset="utf-8"></script>
+    <script src="../assets/js/app.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="../assets/styles/index.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        get<span class="yo">yo</span>car<span class="com">.com</span>
+      </div>
+      <div class="menu">
+        <div class="menu-item">
+          <a href="#" class="nostyle-link">Home</a>
+        </div>
+        <div class="menu-item">
+          <a href="#" class="nostyle-link">Inventory</a>
+        </div>
+        <div class="menu-item">
+          <a href="#" class="nostyle-link">Dealers</a>
+        </div>
+        <div class="menu-item">
+          <a href="#" class="nostyle-link">Contact</a>
+        </div>
+      </div>
+    </header>
+    <div class="hero">
+      <div class="hero-content">
+        <div class="hero-button">
+          <button type="button" name="button" class="btn1">More Refined Interior</button>
+        </div>
+        <div class="hero-highligth">
+          <h1 class="title1">
+            say hello to new kind of yum driving pleasure
+          </h1>
+        </div>
+        <div class="hero-promo">
+          <div class="hero-promo-circle">
+            starts from
+          </div>
+          <div class="hero-promo-price">
+            $55,879
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="searchbar">
+      <div class="col">
+        <input type="text" name="keyword" placeholder="Keyword">
+        <input type="text" name="car" placeholder="Car">
+        <input type="text" name="makes" placeholder="Makes">
+        <input type="text" name="location" placeholder="Location">
+        <input type="button" name="search" value="search">
+      </div>
+    </div>
+    <section class="cars">
+    <div class="col-flex">
+      <div class="card" ng-repeat="car in cars">
+        <div class="card-img">
+          <img src="images/{{car.imgSrc}}" alt="Car" class="car-img" />
+        </div>
+        <div class="card-content">
+          <h3 class="car-brand">{{car.brand}}</h3>
+          <h4 class="car-shortDesc">{{car.shortDesc}}</h4>
+          <div class="car-price">
+            <div class="discountprice">
+              {{car.discountPrice}}
+            </div>
+            <div class="currentprice">
+              {{car.currentPrice}}
+            </div>
+          </div>
+        </div>
+        <div class="card-settings">
+
+        </div>
+      </div>
+    </div>
+    </section>
+  </body>
+</html>
