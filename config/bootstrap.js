@@ -33,6 +33,13 @@ module.exports.bootstrap = function(cb) {
   imgSrc: 'versa.jpg',
   currentPrice: 12000
 
+},
+{
+  brand: 'Hitachi',
+  shortDesc: 'Hitach 2.0 Version Faster',
+  discountPrice: 5000,
+  imgSrc: 'car1.jpg',
+  currentPrice: 7500
 }]).exec(function theFuture(err, result){
   if (err) {
     console.log("It did not work", err);
